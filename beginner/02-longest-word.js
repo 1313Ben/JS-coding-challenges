@@ -29,12 +29,12 @@ function LongestWord(sen) {
   // in our case the pattern we define below returns words with
   // only the characters a through z and 0 through 9, stripping away punctuation
   // e.g. "hello$% ##all" becomes [hello, all]
-  var arr = sen.match(/[a-z]+/gi);
+  let arr = sen.match(/[a-z]+/gi);
 
   // the array sort function takes a function as a parameter
   // which is used to compare each element in the array to the
   // next element in the array
-  var sorted = arr.sort(function(a, b) {
+  let sorted = arr.sort(function(a, b) {
     return b.length - a.length;
   });
 
