@@ -38,7 +38,6 @@ console.log(SimpleSymbols('+a+a+'))
 
 
 // alternate
-
 function SimpleSymbols(str) {
   let reWrongSequence = /([^+]|^)[a-z]|[a-z]([^+]|$)/i;
   return !reWrongSequence.test(str);
