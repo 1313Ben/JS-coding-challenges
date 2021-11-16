@@ -20,12 +20,12 @@ function LetterCapitalize(str) {
 
 console.log(LetterCapitalize("hello world"));
 
-// alternate
+// alternate 1
 function LetterCapitalize(str) {
   return str.replace(/bw/g, ch => ch.toUpperCase());
 }
 
-// alternate
+// alternate 2
 function LetterCapitalize(str) { 
   return str.split(' ').map(item => item[0].toUpperCase().concat(item.slice(1))).join(' ');
 }
