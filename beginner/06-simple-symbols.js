@@ -19,7 +19,7 @@ function SimpleSymbols(str) {
   console.log(matchOneUnique);
 
   //console.log(str.match(/[a-zA-Z][\+\=]/g)); // 
-  const matchTwo = str.match(/[a-zA-Z][\+\=]/g) // checks for a+ or a=
+  const matchTwo = str.match(/[a-zA-Z][\+\=]/g) // checks for sign after alphabet for + or =
   let matchTwoUnique  = [...new Set(matchTwo)] // removing duplicates of matchTwo in case a+ two times appears
   console.log(matchTwoUnique);
 
