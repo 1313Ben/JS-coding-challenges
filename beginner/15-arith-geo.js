@@ -47,3 +47,31 @@ function ArithGeo(arr) {
 }
 
 console.log(ArithGeo([1,2,3,4,5,10,20]))
+
+// alternate
+function ArithGeo(arr) { 
+
+  // code goes here  
+  let isArith = function(arr) {
+    if (arr.length < 2) return -1;
+    let difference = arr[1] - arr[0];
+    for (var i = 1; i < arr.length - 1; i++) {
+      if (arr[i + 1] - arr[i] !== difference) return false;
+    }
+    return true;
+  };
+      
+  let isGeo = function(arr) {
+    if (arr.length < 2) return -1;
+    let multiplier = arr[1] / arr[0];
+    for (var i = 1; i < arr.length - 1; i++) {
+      if (arr[i + 1] / arr[i] !== multiplier) return false;
+    }
+    return true;
+  };
+  
+  if (isArith(arr)) return "Arithmetic";
+  else if (isGeo(arr)) return "Geometric"; 
+  else return -1;  
+}
+  
