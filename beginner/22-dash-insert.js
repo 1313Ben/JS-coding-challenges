@@ -36,11 +36,10 @@ function DashInsert(str) {
 }
    
 // console.log(DashInsert(77993));
-//console.log(DashInsert(99946));
+console.log(DashInsert(99946));
 
 // alternate
 function DashInsert(str) { 
-  //return str.toString().replace(/([13579])(?=[13579])/g, "$1-");
   return str.toString().replace(/([13579])(?=[13579])/g, "$1-");
 }
 
