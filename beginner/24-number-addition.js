@@ -72,14 +72,14 @@ function NumberAddition(str) {
 
 console.log(NumberAddition("75Number9"));
 
-// alternate II
-// function NumberAddition(str) { 
-//     var nums = str.split(/\D+/);
-//     var sum = 0;
+//alternate II
+function NumberAddition(str) { 
+    var nums = str.split(/\D+/);
+    var sum = 0;
     
-//     for (var i = 0; i < nums.length; i++){
-//         sum += (parseInt(nums[i]) || 0);
-//     }
-//     return sum; 
-// }
+    for (let i = 0; i < nums.length; i++){
+        sum += (parseInt(nums[i]) || 0);
+    }
+    return sum; 
+}
   
